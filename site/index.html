@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Tirthrajsinh">
+  <meta name="description" content="This is Tirthrajsinh personal website for CSD112 Lab 2.">
+  <title>Tirthrajsinh's Website</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!-- Add CSS for Table Borders -->
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="width-wrap">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Table Added Here -->
+      <div id="making-a-table">
+        <table>
+          <caption>Table 1. Current Courses</caption>
+          <thead>
+            <tr>
+              <th scope="col">Term</th>
+              <th scope="col">Code</th>
+              <th scope="col">Name</th>
+              <th scope="col">Hrs/Week</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" rowspan="6">Fall</th>
+              <td>CSD105</td>
+              <td>Python</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>CMM115</td>
+              <td>Communications I</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>CSD120</td>
+              <td>Introduction to Web Development</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSO104</td>
+              <td>Introduction to Operating Systems and LAN</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>MTH122</td>
+              <td>Computer Mathematics</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>TNY130</td>
+              <td>Technology in Society</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="5">Winter</th>
+              <td>CSA103</td>
+              <td>Business Applications I</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSD102</td>
+              <td>Programming Using C++</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>CSD212</td>
+              <td>Web Scripting Languages</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CSO102</td>
+              <td>Introduction to Linux</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CST104</td>
+              <td>PC Hardware and Networking</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="3">Total</th>
+              <td>41</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <h1>Welcome to Tirthrajsinh’s Website!</h1>
+      <p>Hello! My name is Tirthrajsinh. I am a student learning HTML and building my first personal website.</p>
+      <p>I enjoy exploring web technologies, coding, and working on creative projects.</p>
+
+      <h2>My Favourite Club</h2>
+      <img src="C:\Users\rutur\Desktop\tirthrajsinh-1\Tirthrajsinh280\images\logo.png" alt="Logo of your favorite team">
+      <h3>Favorite Movies</h3>
+      <ol>
+        <li>Surayavansham</li>
+        <li>Surayavanshi</li>
+        <li>Pokemon</li>
+      </ol>
+
+      <section>
+        <h1>About Me</h1>
+        <p>My thumbnail Image</p>
+        <a href="images/logo.png">
+          <img src="images/150-pix.png" srcset="images/150-pix.png 150w, images/300.png 300w" alt="My image">
+        </a>
+      </section>
+
+      <footer>
+        <picture>
+          <source srcset="images/sc-logo.svg" type="image/svg+xml">
+          <img src="images/sc-logo.png" srcset="images/sc-logo@1.5x.png 1.5x, images/sc-logo@2x.png 2x" alt="Sault College Logo" width="70">
+        </picture>
+      </footer>
+
+      <section>
+        <h3>Public Domain Audiobook</h3>
+        <audio controls>
+          <source src="https://ia600607.us.archive.org/32/items/brazilstraynotesfrombahia_2502_librivox/brazil_01_wetherell_64kb.mp3" type="audio/mp3">
+          <p>
+            Your browser doesn't support this audio file. Here is a
+            <a href="https://ia600607.us.archive.org/32/items/brazilstraynotesfrombahia_2502_librivox/brazil_01_wetherell_64kb.mp3">link to the audio</a> instead.
+          </p>
+        </audio>
+        <br>
+        <a href="https://ia600607.us.archive.org/32/items/brazilstraynotesfrombahia_2502_librivox/brazil_01_wetherell_64kb.mp3" download>Download Audiobook</a>
+      </section>
+
+      <section>
+        <h3>YouTube Videos</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rsAEWKl4ssA?si=0W6IMhINT3XNvwgP" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <h3>Haiku</h3>
+      <p>
+        A world of dew<br>
+        And within every dewdrop<br>
+        A world of struggle<br>
+        <cite>by <span class="author">Kobayashi Issa</span></cite>
+      </p>
+    </main>
+
+    <footer>
+      <hr>
+      <blockquote>
+        “The only way to do great work is to love what you do.”
+        <cite>— Steve Jobs</cite>
+      </blockquote>
+      <p>&copy; 2025 <a href="mailto:24040864@saultcollege.ca?subject=Message%20from%20CSD112%20Website">Tirthrajsinh</a></p>
+    </footer>
+  </div>
+  <a href="#top" title="Back to top">◤</a>
+</body>
+</html>
