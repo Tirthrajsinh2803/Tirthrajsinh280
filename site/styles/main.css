@@ -1,0 +1,129 @@
+/* Step 2: Basic Styles */
+* {
+    box-sizing: border-box; /* Ensure all elements use border-box sizing */
+}
+
+.width-wrap {
+    max-width: 960px; /* Maximum width of 960px */
+    margin: 0 auto; /* Center the element */
+    padding: 0 2em 2em; /* Padding: left/right 2em, bottom 2em */
+    border: 1px solid rgba(180, 28, 28, 0.3); /* Border: 1px solid black with alpha 0.3 */
+    border-top: none; /* No top border */
+    margin-bottom: 3em; /* Bottom margin to create space */
+}
+
+/* Step 3: Color Scheme */
+body {
+    background-color: #f4f4f4; /* Light background for body */
+    color: #d2f548; /* Default text color */
+}
+
+.width-wrap {
+    background-color: #0717be; /* Background color for width-wrap */
+}
+
+h1, h2, h3 {
+    color: #1da9d7; /* Non-default color for headings */
+}
+
+a {
+    color: #3498db; /* Non-default color for hyperlinks */
+}
+
+header nav a {
+    color: #e74c3c; /* Different color for header navigation links */
+}
+
+::selection {
+    background-color: #f1c40f; /* Highlight selected text with a non-default background color */
+}
+
+/* Step 4: Header Layout */
+header {
+    border-top: 4px solid rgba(125, 177, 154, 0.1); /* Top border for header */
+    margin: 0 -2em; /* Negative margins to align with width-wrap padding */
+}
+
+header nav {
+    border-bottom: 1px dotted rgba(114, 236, 143, 0.3); /* Dotted bottom border for nav */
+    padding: 0 2em; /* Padding to align with width-wrap */
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove bullet points */
+}
+
+header nav li {
+    display: inline; /* Display list items inline */
+}
+
+header nav a {
+    display: inline-block; /* Allow vertical box dimensions */
+    padding: 1em; /* Horizontal space around links */
+    margin-top: 1em; /* Space between link text and top border */
+    border-top: 4px solid transparent; /* Transparent top border by default */
+}
+
+header nav a:hover {
+    border-top-color: #e74c3c; /* Opaque top border on hover */
+}
+
+/* Step 5: Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spacing between cells */
+}
+
+th, td {
+    padding: 0.3em 1em; /* Padding for table cells */
+}
+
+thead th, tfoot th, tbody th {
+    background-color: rgba(0, 0, 0, 0.2); /* Background for header cells */
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.05); /* Background for data cells */
+}
+
+tbody tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.15); /* Background for even-numbered rows */
+}
+
+/* Step 6: Form Styling */
+label {
+    display: block; /* Labels on their own line */
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline; /* Labels after radio/checkbox remain inline */
+}
+
+input[type="submit"] {
+    border: none; /* No border for submit buttons */
+    padding: 1em 3em; /* Padding for submit buttons */
+    background-color: #3498db; /* Non-default background color */
+    color: #ffffff; /* Non-default text color */
+}
+
+input:invalid {
+    background-color: #ffdddd; /* Highlight invalid form controls */
+}
+
+/* Step 2: Footer HR Styling */
+footer hr {
+    width: 50%; /* Half the viewport width */
+    min-width: 300px; /* Minimum width of 300px */
+    max-width: 890px; /* Maximum width of 890px */
+    margin: 3em auto 2em; /* Top/bottom margins */
+    border: none; /* Clear default borders */
+    border-bottom: 3px dotted #3498db; /* Dotted bottom border */
+}
+
+/* Step 2: Definition List Styling */
+dt::after {
+    content: ":"; /* Append a colon after each term in a definition list */
+}
